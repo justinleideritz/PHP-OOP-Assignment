@@ -91,7 +91,7 @@ class Reisadvies {
             'snorofbrom' => $this->snorofbrom,
             'travelTimeScooter' => $travelTimeScooter,
             'travelTimeFiets' => $travelTimeFiets,
-            'recommendation' => $snelheidFiets > $snelheidScooter ? "Fiets is beter" : "Scooter is beter"
+            'recommendation' => $snelheidFiets > $snelheidScooter ? "Fiets is beter" : "Snorfiets/Brommer is beter"
         ];
     }
 }
@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "(15KM/u = fiets & 25KM/u = elektrische fiets): " . $result['snelheid'] . "KM/u<br>";
     echo "<br>";
     echo "Scooter bandenspanning: " . $result['scooterBandingspanningResult'] . "%<br>";
-    echo "Snor (25KM/u) of brom (45KM/u): " . $result['snorofbrom'] . "KM/u<br>";
+    echo "Snorfiets (25KM/u) of brommer (45KM/u): " . $result['snorofbrom'] . "KM/u<br>";
 
     echo "<br>";
     echo "Reistijd in minuten met scooter: " . $result['travelTimeScooter'] . " minuten<br>";
