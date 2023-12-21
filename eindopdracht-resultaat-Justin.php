@@ -28,11 +28,6 @@
             text-align: center;
         }
 
-        h2 {
-            color: #444;
-            margin-bottom: 10px;
-        }
-
         /* Opmaak voor resultaten */
         .resultaat p {
             margin-bottom: 8px;
@@ -56,7 +51,6 @@
 <body>
     <div class="resultaat">
     <h1>Resultaat</h1>
-    <h2>Informatie meegegeven</h2>
     <?php
 class Reisadvies {
     private $lengte;
@@ -118,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Snorfiets (25KM/u) of brommer (45KM/u): " . $result['snorofbrom'] . "KM/u<br>";
 
     echo "<br>";
-    echo "Reistijd in minuten met scooter: " . $result['travelTimeScooter'] . " minuten<br>";
+    echo "Reistijd in minuten met snorfiets/brommer: " . $result['travelTimeScooter'] . " minuten<br>";
     echo "Reistijd in minuten met fiets: " . $result['travelTimeFiets'] . " minuten<br>";
     echo "<br>";
     echo "Reisadvies:<br>";
