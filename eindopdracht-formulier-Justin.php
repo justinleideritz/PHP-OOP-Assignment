@@ -113,7 +113,7 @@
                 <br>
                 <div>
                     <label for="bandenspanning">Bandenspanning (in %):</label>
-                    <input required type="number" name="fietsbandenspanning" id="fietsbandenspanning">
+                    <input required type="number" name="fietsbandenspanning" id="fietsbandenspanning" min="0" max="100">
                 </div>
             </div>
             <hr>
@@ -126,7 +126,7 @@
                 </select>
                 <br>
                 <label for="scooterbandenspanning">Bandenspanning (in %):</label>
-                <input required type="number" name="scooterbandenspanning" id="scooterbandenspanning">
+                <input required type="number" name="scooterbandenspanning" id="scooterbandenspanning" min="0" max="100">
             </div>
             <hr>
             <div class="submitbutton">
