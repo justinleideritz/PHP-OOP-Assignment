@@ -93,11 +93,13 @@
             echo "<hr>";
             echo "<p><strong>Elektrische of normale fiets</strong></p>";
             echo "<p>Keuze: ".ucfirst($typeFiets)."<br>";
-            echo "Bandenspanning: ".$fiets->bandenspanning."% </p>";
+            echo "Bandenspanning: ".$fiets->bandenspanning."% <br>";
+            echo "Snelheid: ".$restSnelheidFiets." KM/u </p>";
             echo "<hr>";
             echo "<p><strong>Snor- of bromfiets</strong></p>";
             echo "<p>Keuze: ".ucfirst($typeScooter)."<br>";
-            echo "Bandenspanning: ".$scooter->bandenspanning."% </p>";
+            echo "Bandenspanning: ".$scooter->bandenspanning."% <br>";
+            echo "Snelheid: ".$restSnelheidScooter. " KM/u</p>";
             echo "<hr>";
             echo "<p><strong>Reistijden</strong></p>";
             echo "<p>Reistijd van de ".$typeScooter.": ".round($reistijdScooter)." minuten<br>";
