@@ -46,8 +46,8 @@
 </head>
 <body>
     <?php
-        $aantalKilometers = $_POST['km'];
-        $minutenAanFile = $_POST['file'];
+        $aantalKilometers = isset($_POST['km']);
+        $minutenAanFile = isset($_POST['file']);
 
         class Voertuig {
             public $snelheid;
@@ -59,8 +59,8 @@
             }
         }
 
-        $fiets = new Voertuig($_POST['fietsbandenspanning'], $_POST['keuze']);
-        $scooter = new Voertuig($_POST['scooterbandenspanning'], $_POST['snorofbrom']);
+        $fiets = new Voertuig(isset($_POST['fietsbandenspanning']), isset($_POST['keuze']));
+        $scooter = new Voertuig(isset($_POST['scooterbandenspanning']), isset($_POST['snorofbrom']));
 
         if ($fiets->snelheid == 15) {
             $typeFiets = "normale fiets";

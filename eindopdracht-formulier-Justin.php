@@ -85,7 +85,7 @@
 <body>
     <div class="content">
         <div class="kop">
-            <h1>Gegevens voor reisadvies</h1>
+            <h1>Voer uw reisinformatie in:</h1>
         </div>
         <hr>
         <form method="post" action="eindopdracht-resultaat-Justin.php">
