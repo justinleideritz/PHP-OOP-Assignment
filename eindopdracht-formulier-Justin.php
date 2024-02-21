@@ -93,10 +93,10 @@
                 <h2>De weg</h2>
                 <br>
                 <label for="km">Lengte (in KM):</label>
-                <input required type="number" name="km" id="km">
+                <input required type="number" name="km" id="km" min="0">
                 <br>
                 <label for="file">Vertraging door file (in minuten):</label>
-                <input required type="number" name="file" id="file">
+                <input required type="number" name="file" id="file" value="0" min="0">
             </div>
             <hr>
             <div class="fiets">
@@ -104,16 +104,16 @@
                 <br>
                 <div>
                     <input type="radio" value="15" name="keuze" id="15">
-                    <label for="15">Niet Elektrisch (fietssnelheid = 15km/u)</label>
+                    <label for="15">Niet Elektrisch (15KM/u)</label>
                 </div>
                 <div>
                     <input type="radio" value="25" name="keuze" id="25">
-                    <label for="25">Elektrisch (fietssnelheid = 25km/u)</label>
+                    <label for="25">Elektrisch (25KM/u)</label>
                 </div>
                 <br>
                 <div>
                     <label for="bandenspanning">Bandenspanning (in %):</label>
-                    <input required type="number" name="fietsbandenspanning" id="fietsbandenspanning" min="0" max="100">
+                    <input required type="number" name="fietsbandenspanning" id="fietsbandenspanning" min="0" max="100" value="100">
                 </div>
             </div>
             <hr>
@@ -126,7 +126,7 @@
                 </select>
                 <br>
                 <label for="scooterbandenspanning">Bandenspanning (in %):</label>
-                <input required type="number" name="scooterbandenspanning" id="scooterbandenspanning" min="0" max="100">
+                <input required type="number" name="scooterbandenspanning" id="scooterbandenspanning" min="0" max="100" value="100">
             </div>
             <hr>
             <div class="submitbutton">
