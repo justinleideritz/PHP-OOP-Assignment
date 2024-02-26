@@ -93,14 +93,14 @@
                 <h2>De weg</h2>
                 <br>
                 <label for="km">Lengte (in KM):</label>
-                <input required type="number" name="km" id="km" min="0">
+                <input required type="number" name="km" id="km" min="0" value="0">
                 <br>
                 <label for="file">Vertraging door file (in minuten):</label>
                 <input required type="number" name="file" id="file" value="0" min="0">
             </div>
             <hr>
             <div class="fiets">
-                <h2>Elektrische of normale fiets</h2>
+                <h2>Elektrische- of normale fiets</h2>
                 <br>
                 <div>
                     <input type="radio" value="15" name="keuze" id="15">

@@ -16,7 +16,7 @@
         }
 
         .container {
-            margin-top: 100px;
+            margin: 10px 0px;
             width: 350px;
             background-color: white;
             border-radius: 5px;
@@ -100,7 +100,7 @@
         echo "<p>Reis: " . $aantalKilometers . " KM<br>";
         echo "File: " . $minutenAanFile . " minuten</p>";
         echo "<hr>";
-        echo "<p><strong>Elektrische of normale fiets</strong></p>";
+        echo "<p><strong>Elektrische- of normale fiets</strong></p>";
         echo "<p>Keuze: " . ucfirst($typeFiets) . "<br>";
         echo "Bandenspanning: " . $fiets->bandenspanning . "% <br>";
         echo "Snelheid: " . $restSnelheidFiets . " KM/u </p>";
